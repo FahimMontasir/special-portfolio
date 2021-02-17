@@ -76,6 +76,9 @@ body {
 span {
     color: #ee2296;
 }
+.profile {
+    display: none;
+}
 
 /* responsive */
 @media only screen and (max-width: 700px) {
@@ -84,18 +87,27 @@ span {
     }
 
     .row {
-        grid-template-columns: 7% 93%;
+        grid-template-columns: 7% 90%;
     }
 
     .top-list {
-        padding: 2rem 0;
+        padding: 8rem 0;
     }
 
     /* hero */
     .heading {
         font-size: 3rem;
         /* margin: 14rem 0 0 9rem; */
-        margin: 10% 0 0 20%;
+        margin: 10% 0 0 5.5%;
         letter-spacing: 1rem;
+        text-align: end;
+    }
+    .bottom {
+        padding-bottom: 5rem;
+    }
+    .profile {
+        display: block;
+        width: 100%;
+        margin-top: 0;
     }
 }
