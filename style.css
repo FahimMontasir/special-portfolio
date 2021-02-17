@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Truculenta:wght@400;600&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -45,19 +46,24 @@ body {
     padding-bottom: .7rem;
     padding-left: 20%;
 }
+
 .top-list li img {
     width: 70%;
 }
+
 .bottom {
     padding: 0;
     padding-top: 5rem;
 }
+
 .active {
-    background-color:black;
+    background-color: black;
 }
+
 .top-list li:hover {
     background-color: black;
 }
+
 /* hero */
 .heading {
     color: white;
@@ -66,6 +72,30 @@ body {
     margin: 17% 0 0 12%;
     letter-spacing: .7rem;
 }
+
 span {
     color: #ee2296;
+}
+
+/* responsive */
+@media only screen and (max-width: 700px) {
+    .main {
+        background-image: none;
+    }
+
+    .row {
+        grid-template-columns: 7% 93%;
+    }
+
+    .top-list {
+        padding: 2rem 0;
+    }
+
+    /* hero */
+    .heading {
+        font-size: 3rem;
+        /* margin: 14rem 0 0 9rem; */
+        margin: 10% 0 0 20%;
+        letter-spacing: 1rem;
+    }
 }
